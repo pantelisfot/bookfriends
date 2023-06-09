@@ -64,7 +64,7 @@ class LibraryApp(tk.Tk):
         self.login_button = tk.Button(self, text="Login", command=self.login)
         self.login_button.pack()
 
-    def login(self):
+    def login(self): #koumpi Login
         username = self.username_entry.get()
         password = self.password_entry.get()
 
@@ -80,7 +80,7 @@ class LibraryApp(tk.Tk):
         else:
             messagebox.showerror("Login Error", "Invalid username or password.")
 
-    def show_book_list(self):
+    def show_book_list(self): #koumpi Show Books
         book_list_window = tk.Toplevel(self)
         book_list_window.title("Book List")
         book_list_window.geometry("500x300")
@@ -97,7 +97,7 @@ class LibraryApp(tk.Tk):
         self.add_book_button = tk.Button(book_list_window, text="Add Book", command=self.show_add_book)
         self.add_book_button.pack()
 
-    def show_add_book(self):
+    def show_add_book(self): #koumpi Add Book
         add_book_window = tk.Toplevel(self)
         add_book_window.title("Add Book")
         add_book_window.geometry("500x300")
@@ -131,7 +131,7 @@ class LibraryApp(tk.Tk):
         self.add_book_button = tk.Button(add_book_window, text="Add", command=self.add_book)
         self.add_book_button.pack()
 
-    def show_add_bookReview(self):
+    def show_add_bookReview(self): #koumpi Add Review
         add_bookReview_window = tk.Toplevel(self)
         add_bookReview_window.title("Add Book Review")
         add_bookReview_window.geometry("500x300")
